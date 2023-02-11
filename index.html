@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+        <script>Pi.init({ version: "2.0", sandbox: true })</script>
+        <script>
+            var scopes = {
+                uid:"qweqweqweqweqweq   ",
+                username:"pmanent"
+            }
+            console.log("topotamadre");
+            Pi.authenticate(scopes, (payment)=>{console.log("onIncompletePaymentFound")})
+            .then((auth)=>console.log(auth))
+            .catch(error=> console.log(error));
+        </script>
+    </head>
+    <body>
+        <p>This is an example of a simple HTML page with one paragraph.</p>
+    </body>
+</html>
