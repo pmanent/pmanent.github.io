@@ -10,9 +10,9 @@
                 username:"pmanent"
             }
             console.log("topotamadre");
-            Pi.authenticate(scopes, (payment)=>{console.log("onIncompletePaymentFound")})
-            .then((auth)=>console.log(auth))
-            .catch(error=> console.log(error));
+            Pi.authenticate(scopes, (payment)=>{alert("onIncompletePaymentFound")})
+            .then((auth)=>alert(auth))
+            .catch(error=> alert(error));
         </script>
     </head>
     <body>
